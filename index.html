@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js" integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blockly/9.1.0/blockly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blockly/9.1.0/blockly_compressed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blockly/9.1.0/blocks_compressed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blockly/9.1.0/javascript_compressed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blockly/9.1.0/javascript.min.js"
+        integrity="sha512-1nEAeRS8nq5Bbj9Bv5JxNAc1AGSt6RVNY+57Y4ckTgIdIp4NDxpMgctGQabKaohC4N0Key9YXk2l8g6+JACeig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="container" style="display: flex; justify-content:space-around; align-items:center; position: relative;margin-top: 3rem;">
+        <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+        <div class="field">
+        </div>
+        <div class="score_nav">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Doushouqi-dog.svg/512px-Doushouqi-dog.svg.png"
+                style="width: 40px; height:40px;margin-right: 1rem;">
+            <img src="https://pngset.com/images/apple-free-to-use-clipart-clipart-cute-apple-plant-fruit-food-cherry-transparent-png-2539838.png"
+                style="width: 40px; height:40px;margin-right: 1rem;">
+            <span style="font-size: 1.2rem; font-weight:bold;" id="score">0</span>
+        </div>
+    </div>
+    <div class="btn_holder">
+        <button class="restart" style="cursor:pointer;margin-left: 5rem;
+        margin-right: 3rem;" onClick="window.location.reload();">
+        <i class='bx bx-repeat' style="font-size: 1.2rem;
+        margin-right: 0.5rem;"></i>Restart</button>
+        <button class="start" style="cursor:pointer;margin-left: 5rem;">
+            <i class='bx bx-play' style="font-size: 1.5rem;
+            margin-right: 0.2rem;"></i>Run</button>
+    </div>
+    <script src="./app.js" type="module"></script>
+</body>
+</html>
